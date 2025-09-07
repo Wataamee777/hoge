@@ -2,56 +2,36 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>ゲーム経済まとめ（見やすい版）</title>
+<title>ゲーム経済フルまとめ</title>
 <style>
 body { font-family: "Segoe UI", sans-serif; background: #f8f9fa; color: #222; padding: 20px; }
-h1, h2 { text-align: center; margin-bottom: 15px; color: #333; }
-table { border-collapse: collapse; width: 100%; font-size: 13px; margin-bottom: 30px; }
-th, td { border: 1px solid #aaa; padding: 6px; text-align: center; }
-th { background: #dce2f0; color: #111; }
-caption { font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #222; }
+h1 { text-align: center; color: #333; margin-bottom: 20px; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; margin-bottom: 30px; }
+th, td { border: 1px solid #aaa; padding: 4px 6px; text-align: center; }
+th { background: #dce2f0; }
 tr:nth-child(even) { background: #f1f3f5; }
 tr:hover { background: #ffeeba; }
 .highlight { background: #c3e6cb; font-weight: bold; }
+caption { font-weight: bold; margin-bottom: 5px; font-size: 16px; }
 </style>
 </head>
 <body>
 
-<h1>🪙 ゲーム経済まとめ（見やすい版）</h1>
-
-<h2>職業・給与・適正値</h2>
+<!-- ギャンブル系 -->
 <table>
-<caption>職業別理論給与・分給・時給（適正値0.8～2.0）</caption>
-<tr>
-<th>職名</th><th>必要費用</th><th>単価</th><th>CT(分)</th><th>Tax(%)</th><th>ボーナス</th>
-<th>理論給与</th><th>理論分給</th><th>理論時給</th>
-<th>最低時給</th><th>最低分給</th><th>適正値0.8～2.0</th>
-</tr>
-<tr class="highlight"><td>無職</td><td>0</td><td>100</td><td>10</td><td>15</td><td>0</td><td>85</td><td>8.5</td><td>510</td><td>510</td><td>8.5</td><td>80～200</td></tr>
-<tr><td>ギャンブラー</td><td>0</td><td>80</td><td>10</td><td>15</td><td>0.8</td><td>95.2</td><td>9.52</td><td>571.2</td><td>408</td><td>6.8</td><td>64～160</td></tr>
-<tr><td>ひよこ鑑定士</td><td>400</td><td>300</td><td>10</td><td>15</td><td>0.8</td><td>255</td><td>25.5</td><td>1530</td><td>1530</td><td>25.5</td><td>240～600</td></tr>
-<tr><td>フリーター</td><td>600</td><td>500</td><td>15</td><td>15</td><td>0.1</td><td>446.25</td><td>29.75</td><td>1785</td><td>1700</td><td>28.33</td><td>400～1000</td></tr>
-<tr><td>農家</td><td>1500</td><td>1000</td><td>20</td><td>15</td><td>0.1</td><td>892.5</td><td>44.625</td><td>2677.5</td><td>2550</td><td>42.5</td><td>800～2000</td></tr>
-<tr><td>インフルエンサー</td><td>5000</td><td>300</td><td>5</td><td>15</td><td>0.3</td><td>293.25</td><td>58.65</td><td>3519</td><td>3060</td><td>51</td><td>240～600</td></tr>
-<tr><td>建築家</td><td>10000</td><td>3000</td><td>45</td><td>15</td><td>0.1</td><td>2677.5</td><td>59.5</td><td>3570</td><td>3400</td><td>56.67</td><td>2400～6000</td></tr>
-<tr><td>投資家</td><td>50000</td><td>3000</td><td>30</td><td>15</td><td>0.5</td><td>3187.5</td><td>106.25</td><td>6375</td><td>5100</td><td>85</td><td>2400～6000</td></tr>
-<tr><td>エンジニア</td><td>80000</td><td>10000</td><td>60</td><td>15</td><td>0.3</td><td>9775</td><td>162.92</td><td>9775</td><td>8500</td><td>141.67</td><td>8000～20000</td></tr>
-<tr class="highlight"><td>医師</td><td>150000</td><td>12000</td><td>60</td><td>15</td><td>0.1</td><td>10710</td><td>178.5</td><td>10710</td><td>10200</td><td>170</td><td>9600～24000</td></tr>
+<caption>ギャンブル</caption>
+<tr><th>カテゴリ</th><th>詳細</th></tr>
+<tr><td>宝くじ</td><td>1枚 1000コイン、1等 5500コイン（参加人数・購入枚数で変動）</td></tr>
+<tr><td>ガチャ</td><td>1回 30コイン（紙片～タングナイト排出）</td></tr>
+<tr><td>Exchange</td><td>10コイン = 1チップ</td></tr>
+<tr><td>Guess</td><td>10～100,000チップまで賭け可能（初期は控えめ推奨）</td></tr>
 </table>
 
-<h2>ギャンブル系</h2>
+<!-- アイテム換金 -->
 <table>
-<tr><th>種類</th><th>コスト/参加条件</th><th>備考</th></tr>
-<tr class="highlight"><td>宝くじ</td><td>1枚 1000コイン</td><td>1等 5500コイン、参加人数・購入枚数で変動</td></tr>
-<tr><td>ガチャ</td><td>1回 30コイン</td><td>アイテム排出（紙片～タングナイト）</td></tr>
-<tr><td>Exchange</td><td>10コイン = 1チップ</td><td>チップを使って賭け</td></tr>
-<tr><td>Guess</td><td>10～100,000チップ</td><td>初期は控えめ推奨</td></tr>
-</table>
-
-<h2>アイテム換金</h2>
-<table>
+<caption>アイテム換金レート</caption>
 <tr><th>アイテム</th><th>換金額</th></tr>
-<tr class="highlight"><td>紙片</td><td>1コイン</td></tr>
+<tr><td>紙片</td><td>1コイン</td></tr>
 <tr><td>エメラルド</td><td>5コイン</td></tr>
 <tr><td>銅塊</td><td>10コイン</td></tr>
 <tr><td>鉄塊（銀塊）</td><td>100コイン</td></tr>
@@ -59,10 +39,11 @@ tr:hover { background: #ffeeba; }
 <tr class="highlight"><td>タングナイト</td><td>15000コイン</td></tr>
 </table>
 
-<h2>税・手数料</h2>
+<!-- 税金・手数料 -->
 <table>
-<tr><th>項目</th><th>率/金額</th></tr>
-<tr class="highlight"><td>預金税</td><td>1%</td></tr>
+<caption>税金・手数料</caption>
+<tr><th>種類</th><th>詳細</th></tr>
+<tr><td>預金税</td><td>1%</td></tr>
 <tr><td>交換税</td><td>20%</td></tr>
 <tr><td>贈与税</td><td>20%</td></tr>
 <tr><td>株式売却税</td><td>10%</td></tr>
@@ -73,6 +54,66 @@ tr:hover { background: #ffeeba; }
 <tr><td>預金利息</td><td>0.1%</td></tr>
 <tr class="highlight"><td>会社設立税</td><td>20%</td></tr>
 <tr><td>放置税</td><td>10,000コイン</td></tr>
+</table>
+
+<!-- 会社 -->
+<table>
+<caption>会社</caption>
+<tr><th>項目</th><th>詳細</th></tr>
+<tr class="highlight"><td>設立費用</td><td>資本金 100,000コイン、給料最低 1000コイン</td></tr>
+</table>
+
+<!-- 職業・給与・転職コスト・適正値 -->
+<table>
+<caption>職業・給与・転職コスト・適正値（フル版）</caption>
+<tr>
+<th>職名</th><th>必要費用</th><th>単価</th><th>CT(分)</th><th>Tax(%)</th><th>ボーナス</th>
+<th>理論給与</th><th>理論分給</th><th>理論時給</th><th>最低時給</th><th>最低分給</th>
+<th>0.8</th><th>0.9</th><th>1.0</th><th>1.1</th><th>1.2</th><th>1.3</th><th>1.4</th><th>1.5</th><th>1.6</th><th>1.7</th><th>1.8</th><th>1.9</th><th>2.0</th>
+</tr>
+
+<!-- ここに送ってくれたCSVデータをすべてtrとして追加 -->
+<tr>
+<td>無職</td><td>0</td><td>100</td><td>10</td><td>15</td><td>0</td><td>85</td><td>8.5</td><td>510</td><td>510</td><td>8.5</td>
+<td>80</td><td>90</td><td>100</td><td>110</td><td>120</td><td>130</td><td>140</td><td>150</td><td>160</td><td>170</td><td>180</td><td>190</td><td>200</td>
+</tr>
+<tr>
+<td>ギャンブラー</td><td>0</td><td>80</td><td>10</td><td>15</td><td>0.8</td><td>95.2</td><td>9.52</td><td>571.2</td><td>408</td><td>6.8</td>
+<td>64</td><td>72</td><td>80</td><td>88</td><td>96</td><td>104</td><td>112</td><td>120</td><td>128</td><td>136</td><td>144</td><td>152</td><td>160</td>
+</tr>
+<tr>
+<td>ひよこ鑑定士</td><td>400</td><td>300</td><td>10</td><td>15</td><td>0.8</td><td>255</td><td>25.5</td><td>1530</td><td>1530</td><td>25.5</td>
+<td>240</td><td>270</td><td>300</td><td>330</td><td>360</td><td>390</td><td>420</td><td>450</td><td>480</td><td>510</td><td>540</td><td>570</td><td>600</td>
+</tr>
+<tr>
+<td>フリーター</td><td>600</td><td>500</td><td>15</td><td>15</td><td>0.1</td><td>446.25</td><td>29.75</td><td>1785</td><td>1700</td><td>28.333</td>
+<td>400</td><td>450</td><td>500</td><td>550</td><td>600</td><td>650</td><td>700</td><td>750</td><td>800</td><td>850</td><td>900</td><td>950</td><td>1000</td>
+</tr>
+<tr>
+<td>農家</td><td>1500</td><td>1000</td><td>20</td><td>15</td><td>0.1</td><td>892.5</td><td>44.625</td><td>2677.5</td><td>2550</td><td>42.5</td>
+<td>800</td><td>900</td><td>1000</td><td>1100</td><td>1200</td><td>1300</td><td>1400</td><td>1500</td><td>1600</td><td>1700</td><td>1800</td><td>1900</td><td>2000</td>
+</tr>
+<tr>
+<td>インフルエンサー</td><td>5000</td><td>300</td><td>5</td><td>15</td><td>0.3</td><td>293.25</td><td>58.65</td><td>3519</td><td>3060</td><td>51</td>
+<td>240</td><td>270</td><td>300</td><td>330</td><td>360</td><td>390</td><td>420</td><td>450</td><td>480</td><td>510</td><td>540</td><td>570</td><td>600</td>
+</tr>
+<tr>
+<td>建築家</td><td>10000</td><td>3000</td><td>45</td><td>15</td><td>0.1</td><td>2677.5</td><td>59.5</td><td>3570</td><td>3400</td><td>56.667</td>
+<td>2400</td><td>2700</td><td>3000</td><td>3300</td><td>3600</td><td>3900</td><td>4200</td><td>4500</td><td>4800</td><td>5100</td><td>5400</td><td>5700</td><td>6000</td>
+</tr>
+<tr>
+<td>投資家</td><td>50000</td><td>3000</td><td>30</td><td>15</td><td>0.5</td><td>3187.5</td><td>106.25</td><td>6375</td><td>5100</td><td>85</td>
+<td>2400</td><td>2700</td><td>3000</td><td>3300</td><td>3600</td><td>3900</td><td>4200</td><td>4500</td><td>4800</td><td>5100</td><td>5400</td><td>5700</td><td>6000</td>
+</tr>
+<tr>
+<td>エンジニア</td><td>80000</td><td>11000</td><td>60</td><td>15</td><td>0.3</td><td>9775</td><td>162.917</td><td>9775</td><td>8500</td><td>141.667</td>
+<td>8000</td><td>9000</td><td>10000</td><td>11000</td><td>12000</td><td>13000</td><td>14000</td><td>15000</td><td>16000</td><td>17000</td><td>18000</td><td>19000</td><td>20000</td>
+</tr>
+<tr>
+<td>医師</td><td>150000</td><td>13200</td><td>60</td><td>15</td><td>0.1</td><td>10710</td><td>178.5</td><td>10710</td><td>10200</td><td>170</td>
+<td>9600</td><td>10800</td><td>12000</td><td>13200</td><td>14400</td><td>15600</td><td>16800</td><td>18000</td><td>19200</td><td>20400</td><td>21600</td><td>22800</td><td>24000</td>
+</tr>
+
 </table>
 
 </body>

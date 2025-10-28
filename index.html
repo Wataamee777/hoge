@@ -25,7 +25,7 @@ caption { font-weight: bold; margin-bottom: 5px; font-size: 16px; }
 <tr><td>ガチャ</td><td>1回 30コイン（紙片～タングナイト排出）</td></tr>
 <tr><td>Exchange</td><td>10コイン = 1チップ</td></tr>
 <tr><td>Guess</td><td>10～100,000チップまで賭け可能（初期は控えめ推奨）</td></tr>
-<tr><td>steal</td><td>10,000コインまで盗める 信用ポイントが0以上で8ポイント取られる</td></tr>
+<tr><td>steal</td><td>10,000コインまで盗める 信用ポイントが0以上で8ポイント取られる 初心者は盗まれない(コイン小)</td></tr>
 </table>
 
 <!-- アイテム換金 -->
@@ -37,7 +37,7 @@ caption { font-weight: bold; margin-bottom: 5px; font-size: 16px; }
 <tr><td>銅塊</td><td>10コイン</td></tr>
 <tr><td>鉄塊（銀塊）</td><td>100コイン</td></tr>
 <tr><td>金塊</td><td>1000コイン</td></tr>
-<tr><td>タングナイト</td><td>15000コイン</td></tr>
+<tr><td>タンザナイト</td><td>15000コイン</td></tr>
 </table>
 
 <!-- 税金・手数料 -->
@@ -55,7 +55,7 @@ caption { font-weight: bold; margin-bottom: 5px; font-size: 16px; }
 <tr><td>預金利息</td><td>0.1%</td></tr>
 <tr><td>会社設立税</td><td>20%</td></tr>
 <tr><td>放置税</td><td>10,000コイン</td></tr>
-<tr><td>転職失敗事</td><td>転職費用の15%</td></tr>
+<tr><td>転職失敗時</td><td>転職費用の15%</td></tr>
 </table>
 
 <!-- 会社 -->
@@ -67,54 +67,42 @@ caption { font-weight: bold; margin-bottom: 5px; font-size: 16px; }
 
 <!-- 職業・給与・転職コスト・適正値 -->
 <table>
-<caption>職業・給与・転職コスト・適正値（フル版）</caption>
+<caption>職業・給与・転職コスト・適正値</caption>
 <tr>
 <th>職名</th><th>必要費用</th><th>単価</th><th>CT(分)</th><th>Tax(%)</th><th>ボーナス</th>
-<th>理論給与</th><th>理論分給</th><th>理論時給</th><th>最低時給</th><th>最低分給</th>
-<th>0.8</th><th>0.9</th><th>1.0</th><th>1.1</th><th>1.2</th><th>1.3</th><th>1.4</th><th>1.5</th><th>1.6</th><th>1.7</th><th>1.8</th><th>1.9</th><th>2.0</th>
+<th>理論給与</th>
+<th>0.8</th><th>0.9</th><th>1.0</th><th>1.1</th><th>1.2</th>
 </tr>
 
-<!-- ここに送ってくれたCSVデータをすべてtrとして追加 -->
-<tr>
-<td>無職</td><td>0</td><td>100</td><td>10</td><td>15</td><td>0</td><td>85</td><td>8.5</td><td>510</td><td>510</td><td>8.5</td>
-<td>80</td><td>90</td><td>100</td><td>110</td><td>120</td><td>130</td><td>140</td><td>150</td><td>160</td><td>170</td><td>180</td><td>190</td><td>200</td>
-</tr>
-<tr>
-<td>ギャンブラー</td><td>0</td><td>80</td><td>10</td><td>15</td><td>0.8</td><td>95.2</td><td>9.52</td><td>571.2</td><td>408</td><td>6.8</td>
-<td>64</td><td>72</td><td>80</td><td>88</td><td>96</td><td>104</td><td>112</td><td>120</td><td>128</td><td>136</td><td>144</td><td>152</td><td>160</td>
-</tr>
-<tr>
-<td>ひよこ鑑定士</td><td>400</td><td>300</td><td>10</td><td>15</td><td>0.8</td><td>255</td><td>25.5</td><td>1530</td><td>1530</td><td>25.5</td>
-<td>240</td><td>270</td><td>300</td><td>330</td><td>360</td><td>390</td><td>420</td><td>450</td><td>480</td><td>510</td><td>540</td><td>570</td><td>600</td>
-</tr>
-<tr>
-<td>フリーター</td><td>600</td><td>500</td><td>15</td><td>15</td><td>0.1</td><td>446.25</td><td>29.75</td><td>1785</td><td>1700</td><td>28.333</td>
-<td>400</td><td>450</td><td>500</td><td>550</td><td>600</td><td>650</td><td>700</td><td>750</td><td>800</td><td>850</td><td>900</td><td>950</td><td>1000</td>
-</tr>
-<tr>
-<td>農家</td><td>1500</td><td>1000</td><td>20</td><td>15</td><td>0.1</td><td>892.5</td><td>44.625</td><td>2677.5</td><td>2550</td><td>42.5</td>
-<td>800</td><td>900</td><td>1000</td><td>1100</td><td>1200</td><td>1300</td><td>1400</td><td>1500</td><td>1600</td><td>1700</td><td>1800</td><td>1900</td><td>2000</td>
-</tr>
-<tr>
-<td>インフルエンサー</td><td>5000</td><td>300</td><td>5</td><td>15</td><td>0.3</td><td>293.25</td><td>58.65</td><td>3519</td><td>3060</td><td>51</td>
-<td>240</td><td>270</td><td>300</td><td>330</td><td>360</td><td>390</td><td>420</td><td>450</td><td>480</td><td>510</td><td>540</td><td>570</td><td>600</td>
-</tr>
-<tr>
-<td>建築家</td><td>10000</td><td>3000</td><td>45</td><td>15</td><td>0.1</td><td>2677.5</td><td>59.5</td><td>3570</td><td>3400</td><td>56.667</td>
-<td>2400</td><td>2700</td><td>3000</td><td>3300</td><td>3600</td><td>3900</td><td>4200</td><td>4500</td><td>4800</td><td>5100</td><td>5400</td><td>5700</td><td>6000</td>
-</tr>
-<tr>
-<td>投資家</td><td>50000</td><td>3000</td><td>30</td><td>15</td><td>0.5</td><td>3187.5</td><td>106.25</td><td>6375</td><td>5100</td><td>85</td>
-<td>2400</td><td>2700</td><td>3000</td><td>3300</td><td>3600</td><td>3900</td><td>4200</td><td>4500</td><td>4800</td><td>5100</td><td>5400</td><td>5700</td><td>6000</td>
-</tr>
-<tr>
-<td>エンジニア</td><td>80000</td><td>11000</td><td>60</td><td>15</td><td>0.3</td><td>9775</td><td>162.917</td><td>9775</td><td>8500</td><td>141.667</td>
-<td>8000</td><td>9000</td><td>10000</td><td>11000</td><td>12000</td><td>13000</td><td>14000</td><td>15000</td><td>16000</td><td>17000</td><td>18000</td><td>19000</td><td>20000</td>
-</tr>
-<tr>
-<td>医師</td><td>150000</td><td>13200</td><td>60</td><td>15</td><td>0.1</td><td>10710</td><td>178.5</td><td>10710</td><td>10200</td><td>170</td>
-<td>9600</td><td>10800</td><td>12000</td><td>13200</td><td>14400</td><td>15600</td><td>16800</td><td>18000</td><td>19200</td><td>20400</td><td>21600</td><td>22800</td><td>24000</td>
-</tr>
+<tr><td>無職</td><td>0</td><td>100</td><td>10</td><td>15</td><td>0</td><td>85</td>
+<td>80</td><td>90</td><td>100</td><td>110</td><td>120</td></tr>
+
+<tr><td>ギャンブラー</td><td>0</td><td>80</td><td>10</td><td>15</td><td>0.8</td><td>95.2</td>
+<td>64</td><td>72</td><td>80</td><td>88</td><td>96</td></tr>
+
+<tr><td>ひよこ鑑定士</td><td>400</td><td>300</td><td>10</td><td>15</td><td>0.8</td><td>255</td>
+<td>240</td><td>270</td><td>300</td><td>330</td><td>360</td></tr>
+
+<tr><td>フリーター</td><td>600</td><td>500</td><td>15</td><td>15</td><td>0.1</td><td>446.25</td>
+<td>400</td><td>450</td><td>500</td><td>550</td><td>600</td></tr>
+
+<tr><td>農家</td><td>1500</td><td>1000</td><td>20</td><td>15</td><td>0.1</td><td>892.5</td>
+<td>800</td><td>900</td><td>1000</td><td>1100</td><td>1200</td></tr>
+
+<tr><td>インフルエンサー</td><td>5000</td><td>300</td><td>5</td><td>15</td><td>0.3</td><td>293.25</td>
+<td>240</td><td>270</td><td>300</td><td>330</td><td>360</td></tr>
+
+<tr><td>建築家</td><td>10000</td><td>3000</td><td>45</td><td>15</td><td>0.1</td><td>2677.5</td>
+<td>2400</td><td>2700</td><td>3000</td><td>3300</td><td>3600</td></tr>
+
+<tr><td>投資家</td><td>50000</td><td>3000</td><td>30</td><td>15</td><td>0.5</td><td>3187.5</td>
+<td>2400</td><td>2700</td><td>3000</td><td>3300</td><td>3600</td></tr>
+
+<tr><td>エンジニア</td><td>80000</td><td>11000</td><td>60</td><td>15</td><td>0.3</td><td>9775</td>
+<td>8000</td><td>9000</td><td>10000</td><td>11000</td><td>12000</td></tr>
+
+<tr><td>医師</td><td>150000</td><td>13200</td><td>60</td><td>15</td><td>0.1</td><td>10710</td>
+<td>9600</td><td>10800</td><td>12000</td><td>13200</td><td>14400</td></tr>
 
 </table>
 
